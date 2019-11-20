@@ -4,7 +4,7 @@ Ce plugin permet de comparer, sur une seule page, deux items, leurs fichiers et 
 
 Le nouveau module mis à disposition sur EMAN, Item Compare, permet de comparer sur deux colonnes les métadonnées et les images associées de deux items.
 
-Pour l'affichage des images en tête de colonne, ItemCompare a besoin du plugin Univeral viewer. 
+Pour l'affichage des images en tête de colonne, ItemCompare a besoin du plugin Universal viewer. 
 
 Il suffit de commencer à taper dans les en-têtes des deux colonnes, les titres des items demandés. Au bout de 3 lettres saisies, une liste déroulante est proposée avec les titres avec ces 3 lettres.
 
