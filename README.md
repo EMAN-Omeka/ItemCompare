@@ -12,4 +12,4 @@ Le plugin essaie autant que possible de garder les metadonnées des deux items a
 
 La fonction “Comparer des items” est accessible dans la barre d'administration du “front office” quand vous êtes connecté.
 
-
+Le plugin a été réalisé avec le soutien de l’[IRIHS – Université de Rouen Normandie](https://irihs.univ-rouen.fr/)
