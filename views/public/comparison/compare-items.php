@@ -1,8 +1,9 @@
 <?php
 echo head(array('bodyclass' => 'items compare', 'title' => 'Comparaison des notices'));
 ?>
-<link href="/bacasable/application/views/scripts/css/jquery-ui.css" media="all" rel="stylesheet" type="text/css" >
 <script type="text/javascript" src="<?php echo WEB_ROOT; ?>/plugins/ItemCompare/javascripts/ajax.js"></script>
+<link href="<?php echo WEB_ROOT; ?>//plugins/ItemCompare/css/style.css" media="all" rel="stylesheet" type="text/css" >
+<link href="<?php echo WEB_ROOT; ?>/application/views/scripts/css/jquery-ui.css" media="all" rel="stylesheet" type="text/css" >
 <h1>Comparaison de notices</h1>
 <hr />
 <div id="tout">

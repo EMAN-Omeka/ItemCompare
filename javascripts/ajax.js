@@ -30,7 +30,6 @@ jQuery(document).on('focus', '#listitemleft, #listitemright', function(e) {
 			event.preventDefault();
 			// navigate to the selected item's url
 			$(this).val(ui.item.label);
-// 			$(this).parent().find('#listitemleft').val(ui.item.label);
         $.ajax({
            url : webroot + '/itemfill/' + ui.item.id, 
            type : 'GET', 
@@ -44,14 +43,16 @@ jQuery(document).on('focus', '#listitemleft, #listitemright', function(e) {
              }
              $(toFill).html(html);
              // Ajustement des hauteurs des conteneurs files
-             left = $(toFill + ' #ci-files').height();
-             right = $(other + ' #ci-files').height();
-             if (left > right) {
-               $(other + ' #ci-files').height(left + 'px');
-             } else {
-               $(toFill + ' #ci-files').height(right + 'px');               
-             }
-//              console.log(left  + '/' + right);             
+             $(toFill).find('.element').each(function(index){
+               id = '#' + $(this).attr('id');
+               toFillHeight = $(this).height();
+               otherHeight = $(other).find(id).height();
+               if (toFillHeight > otherHeight) {
+                 $(other).find(id).height(toFillHeight);
+               } else {
+                 $(this).height(otherHeight);
+               }             
+             });
            }
         });
 		}	  
